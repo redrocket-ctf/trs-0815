@@ -1,0 +1,173 @@
+\documentclass[12pt,a4paper,oneside]{book}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{latexsym}
+%\usepackage{pslatex}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{cite}
+\usepackage{indentfirst}
+\usepackage{tocloft}
+\usepackage{multirow}
+\usepackage{fontspec}
+\usepackage{hyperref}
+% Times New Roman
+
+%\setmainfont{Times New Roman}
+
+% Centering Chapter
+\usepackage{sectsty}   
+\chapterfont{\centering}
+
+\pagestyle{myheadings}
+\setlength{\parindent}{0.8in}
+
+\usepackage[top=1.5in,bottom=1in,left=1.5in,right=1in]{geometry}
+
+
+
+% Theorem style-------------------------------------------------------------------
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{de}[thm]{Definition}
+\renewcommand{\proof}{\textbf{Proof.}}
+
+\numberwithin{equation}{chapter} \DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Ima}{Im}
+
+\usepackage{float}
+%\usepackage[skip=2pt,font=footnotesize]{caption}
+
+% Graph-------------------------------------------------------------------
+\usepackage{graphics,graphicx}
+\usepackage{calc}
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings}
+\tikzstyle{vertex}=[circle, draw, inner sep=2pt, minimum size=4pt]
+\newcommand{\vertex}{\node[vertex]}
+\newcounter{Angle}
+
+
+\newcommand*{\QEDA}{\hfill\ensuremath{\large{\lozenge}}}
+\newcommand*{\QEDAa}{\hfill\ensuremath{\square}}
+
+\renewcommand{\bibname}{\centerline{\Large REFERENCES}}
+
+%Centering table of contents and list of table
+\usepackage{tocloft}
+\renewcommand{\contentsname}{\hfill\bfseries\Large TABLE OF CONTENTS \hfill}   
+\renewcommand{\cftaftertoctitle}{\hfill}
+
+\renewcommand{\listtablename}{\hfill\bfseries\Large LIST OF TABLES} 
+\renewcommand{\cftafterlottitle}{\hfill}
+
+\renewcommand{\listfigurename}{\hfill\bfseries\Large LIST OF FIGURES} 
+\renewcommand{\cftafterloftitle}{\hfill}
+
+
+
+
+
+
+
+\begin{document}
+\thispagestyle{empty}
+
+\begin{figure}[h!]
+\vskip1in
+\begin{center}
+\includegraphics[width=0.5\textwidth]{img/sauercloud.png}
+\end{center}
+\end{figure}
+\setlength{\parindent}{0pt}
+
+\large{\textbf{Technische Richtlinie Sauercloud TRS0815}}: 
+
+{{Fernmündliche Kommunikation für gemeinschaftliche Datenpiraterie während digitalen Flaggeneroberungs-Wettbewerben}}
+
+
+\vskip1.5cm
+\begin{center}
+\textbf{Version 13.3.7}
+\end{center}
+
+
+
+
+\newpage
+\pagenumbering{roman}
+\begin{table}[h]
+	\begin{tabular}{ll}
+		RIchtlinie								   & TRS0815  \\
+		By							   			& Sauerclown \\
+		Affected Product			  				& Real World CTF \\
+		Submission Date							& 2021-01-05 \\
+	\end{tabular}
+\end{table}
+\begin{center}
+  \large{\textbf{ABSTRACT}}\\
+\end{center}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+Brieftauben sind noch immer funktional, sind aber durch Fake News in Verruf geraten.
+
+
+\noindent {\textbf{Keywords:}} : BS, 0815, Kommunikation
+
+\newpage
+
+\tableofcontents
+
+
+
+\newpage
+\pagenumbering{arabic}
+\chapter{Die drei Kanäle}
+Für die Kommukiation wird \textbf{Pad}, \textbf{Text-Chat} und \textbf{Voice-Chat} benutzt.
+
+Die Hierarchie der Kommunikationskanäle lauted: 
+\begin{center}
+Pad > Text-Chat > Voice-Chat.
+\end{center}
+
+Das bedeutet, jegliche relevante Information die im Voice-Chat kommuniziert wird, \textbf{muss} auch im Text-Chat vermerkt werden.
+Genauso muss \textbf{jegliche} relevante Information aus dem Text-Chat im Pad vermerkt werden.
+
+Ein Neuling, der gerade nach elfmonatigem Koma, ohne jemals von der Challenge gehört zu haben, das Pad einsieht, muss genau verstehe können:
+
+\begin{itemize}
+\item Um was es in der Challenge geht.
+\item Welche Lösungsansätze erdacht wurden
+\item Welche Lösungsansätze \textbf{warum} nicht funktioniert haben
+\item Wie der Fortschritt für Lösungsansätze ist
+\end{itemize}
+
+Das Pad muss auch \textbf{Code Snippets}, \textbf{Exploit Scripts} und anderweitig relevanten Code enthalten. 
+
+Das Pad ist im Prinzip die Blaupause für ein sehr ausführliches Writeup, das später in Buchform gedruckt und im eigenverlag über Zitronenlimonadenstände vertrieben wird. Oder getrieben. Oder beides. Weis auch nicht.
+
+\section{Beispiel einer guten Nudel}
+Hans Peter findet heraus, dass er die verschlüsselte Flag schon hat und nur noch einen 4 Byte Key brute forcen muss. Hans Peter ist eine gute Nudel und entscheidet sich, die verschlüsselte Flag, mit Erläuterung zuerst ins Pad zu packen und \textbf{danach} mit der Entschlüsselung zu beginnen.
+
+\chapter{English Version: Communication Channels}
+We do:
+
+\begin{center}
+Pad > Text-Chat > Voice-Chat.
+\end{center}
+
+So, everything relevant has to end up in the Pad! Im too lazy to translate!
+
+\begin{thebibliography}{99}
+\addcontentsline{toc}{chapter}{REFERENCES}
+BSI Technische Richtline: Konformitätsnachweis für Karten-Produkte - \url{https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR03144/TR-03144v1_1.pdf?__blob=publicationFile&v=1}
+\end{thebibliography}
+
+
+\end{document}
